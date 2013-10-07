@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="Japf.Win8.AppBarHint.Demo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Japf.Win8.AppBarHint.Demo.Controls"
+    mc:Ignorable="d">
+
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton
+                Icon="Accept"
+                Label="Accept"/>
+            <AppBarButton
+                Icon="Setting"
+                Label="Settings"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+    
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <controls:AppBarHint Grid.Row="1"/>
+        
+        
+    </Grid>
+</Page>
