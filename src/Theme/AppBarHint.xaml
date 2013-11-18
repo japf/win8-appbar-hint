@@ -4,9 +4,8 @@
     xmlns:controls="using:Japf.Win8.AppBarHint.Demo.Controls">
 
     <Style TargetType="controls:AppBarHint">
-        <Setter Property="VerticalAlignment" Value="Bottom"/>
-        <Setter Property="HorizontalAlignment" Value="Stretch"/>
-        <Setter Property="Background" Value="#4D4D4D"/>
+        <Setter Property="Background" Value="{ThemeResource AppBarBackgroundThemeBrush}"/>
+        <Setter Property="Foreground" Value="{ThemeResource AppBarItemForegroundThemeBrush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="controls:AppBarHint">
@@ -26,16 +25,11 @@
                         <Border 
 						    x:Name="Border"
                             Background="{TemplateBinding Background}"
-                            Height="16"
+                            Height="15"
                             VerticalAlignment="Bottom">
-                            <TextBlock 
-                                Text="..."
-                                HorizontalAlignment="Right"
-                                VerticalAlignment="Center"
-                                FontSize="26"
-                                Margin="0,-16,40,0"
-                                FontWeight="Bold"
-                                Foreground="White"/>
+                            <SymbolIcon Symbol="More"
+                                        HorizontalAlignment="Right"
+                                        VerticalAlignment="Center" Margin="0,0,40,0" />
                         </Border>
                     </Grid>
                 </ControlTemplate>
