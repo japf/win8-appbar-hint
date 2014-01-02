@@ -30,7 +30,9 @@
             HorizontalAlignment="Center"
             FontSize="16"/>
         
-        <controls:AppBarHint Grid.Row="1"/>
+        <controls:AppBarHint 
+            Grid.Row="1"
+            HorizontalAlignment="Stretch"/>
         
     </Grid>
 </Page>
